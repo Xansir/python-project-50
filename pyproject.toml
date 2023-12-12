@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = "First project on Hexlet, set of 5 simple mini-games"
+authors = ["Rodion Rizvanov <xirizvanov@gmail.com>"]
+packages = [
+  { include = "gendiff" },
+]
+readme = "README.md"
+repository = "https://github.com/Xansir/python-project-50.git"
+classifiers = [
+    "Programming Language :: Python ::3",
+    "License :: Freely Distrubutable",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyYAML = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^6.1.0"
+
+[tool.poetry.scripts]
+gendiff = "gendiff.scripts.gendiff:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
