@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "First project on Hexlet, set of 5 simple mini-games"
+description = "Cli-utilite for find difference between two json/yaml files"
 authors = ["Rodion Rizvanov <xirizvanov@gmail.com>"]
 packages = [
   { include = "gendiff" },
@@ -17,6 +17,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.10"
 PyYAML = "^6.0.1"
+pytest = "^7.4.4"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^6.1.0"
