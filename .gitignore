@@ -1,0 +1,6 @@
+/.coverage
+/tests/
+/.github/
+/.pytest_cache/
+/.venv/
+/coverage.xml
