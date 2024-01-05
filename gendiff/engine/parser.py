@@ -9,6 +9,3 @@ def parsing(file_path):
         return yaml.safe_load(open(file_path))
     else:
         return "Unsupported file type, or path Error"
-
-
-

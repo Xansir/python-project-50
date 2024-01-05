@@ -42,32 +42,32 @@ def format_dict(dictionary):
         return result
     elif status == "added":
         if children is True:
-            result['+ '+name] = format_(value)
+            result['+ ' + name] = format_(value)
             return result
-        result['+ '+name] = value
+        result['+ ' + name] = value
         return result
     elif status == "removed":
         if children is True:
-            result['- '+name] = format_(value)
+            result['- ' + name] = format_(value)
             return result
-        result['- '+name] = value
+        result['- ' + name] = value
         return result
     elif status == "changed":
         old_value = get_old_value(dictionary)
         if curr_children is True and old_children is False:
             result['- ' + name] = old_value
-            result['+ '+name] = format_(value)
+            result['+ ' + name] = format_(value)
             return result
         elif old_children is True and curr_children is False:
-            result['- '+name] = format_(old_value)
+            result['- ' + name] = format_(old_value)
             result['+ ' + name] = value
             return result
         elif old_children is True and curr_children is True:
-            result['- '+name] = format_(old_value)
+            result['- ' + name] = format_(old_value)
             result['+ ' + name] = format_(value)
             return result
-        result['- '+name] = old_value
-        result['+ '+name] = value
+        result['- ' + name] = old_value
+        result['+ ' + name] = value
         return result
 
 

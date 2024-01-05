@@ -1,7 +1,6 @@
-import json
 from .parser import parsing
 from gendiff.engine.format.json_formater import format_json
-from .format.stylish_formatter import stylish, format_
+from .format.stylish_formatter import stylish
 from .format.plain_formater import formatter_plain
 
 
@@ -16,7 +15,7 @@ def generate_diff_deep(data, data2):
     for key in sorted({*data.keys(), *data2.keys()}):
         val1, val2 = data.get(key), data2.get(key)
         if key in data and key in data2:
-            if type(val1) == type(val2) == dict:
+            if isinstance(val1) == isinstance(val2) == dict:
                 res.append(
                     {
                         "name": key,
@@ -68,11 +67,10 @@ def generate_diff_deep(data, data2):
             val = generate_diff_deep(val2, val2) if type(val2) == dict else val2
             children_ = True if type(val2) == dict else False
             res.append({"name": key, "presence_status": "added", "value": val, "children": children_})
-            #пока это похоже на записки сумасшедшего
     return res
 
 
-def generate_diff(file1, file2, format_name='json'):
+def generate_diff(file1, file2, format_name='stylish'):
     data, data2 = files_to_dict(file1, file2)
     result = generate_diff_deep(data, data2)
     if format_name == "json":
