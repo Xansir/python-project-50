@@ -37,16 +37,16 @@ def generate_diff_deep(data, data2):
             elif val1 != val2:
                 curr_val = (
                     generate_diff_deep(val2, val2)
-                    if type(val2) == dict
+                    if isinstance(val2, dict)
                     else val2
                 )
                 old_val = (
                     generate_diff_deep(val1, val1)
-                    if type(val1) == dict
+                    if isinstance(val1, dict)
                     else val1
                 )
-                curr_children = True if type(val2) == dict else False
-                old_children = True if type(val1) == dict else False
+                curr_children = isinstance(val2, dict)
+                old_children = isinstance(val1, dict)
                 res.append(
                     {
                         "name": key,
@@ -58,14 +58,18 @@ def generate_diff_deep(data, data2):
                     }
                 )
         if key not in data2:
-            val = generate_diff_deep(val1, val1) if type(val1) == dict else val1
-            children_ = True if type(val1) == dict else False
+            val = generate_diff_deep(val1, val1)\
+                if isinstance(val1, dict)\
+                else val1
+            children_ = isinstance(val1, dict)
             res.append(
                 {"name": key, "presence_status": "removed", "value": val, "children": children_}
             )
         elif key not in data:
-            val = generate_diff_deep(val2, val2) if type(val2) == dict else val2
-            children_ = True if type(val2) == dict else False
+            val = generate_diff_deep(val2, val2) \
+                if isinstance(val2, dict)\
+                else val2
+            children_ = isinstance(val2, dict)
             res.append({"name": key, "presence_status": "added", "value": val, "children": children_})
     return res
 
