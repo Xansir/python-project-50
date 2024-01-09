@@ -13,6 +13,9 @@ publish:
 package-install:
 	python -m pip install dist/*.whl
 
+package-reinstall:
+	python3 -m pip install --force-reinstall --user dist/*.whl
+
 lint:
 	poetry run flake8
 
