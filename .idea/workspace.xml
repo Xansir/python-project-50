@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15568f2e-65da-4f4c-8e01-a8372b903145" name="Changes" comment="Any changes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="15568f2e-65da-4f4c-8e01-a8372b903145" name="Changes" comment="Change init file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/engine/gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/engine/gendiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/format/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/format/json_formater.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/format/plain_formater.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/format/stylish_formatter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/gendiff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/engine/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +118,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704440244958</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Change init file">
+      <option name="closed" value="true" />
+      <created>1704773573422</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704773573422</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Change init file">
+      <option name="closed" value="true" />
+      <created>1704773944148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704773944148</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +152,7 @@
     <MESSAGE value="First commit, for this project" />
     <MESSAGE value="First try" />
     <MESSAGE value="Any changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Any changes" />
+    <MESSAGE value="Change init file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change init file" />
   </component>
 </project>

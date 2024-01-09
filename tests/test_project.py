@@ -1,5 +1,5 @@
 import pytest
-from gendiff.engine.gendiff import generate_diff
+from gendiff.gendiff import generate_diff
 
 
 @pytest.mark.parametrize('input1, input2, expected, format', [
