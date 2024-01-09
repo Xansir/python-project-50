@@ -15,7 +15,7 @@ def generate_diff_deep(data, data2):
     for key in sorted({*data.keys(), *data2.keys()}):
         val1, val2 = data.get(key), data2.get(key)
         if key in data and key in data2:
-            if isinstance(val1) == isinstance(val2) == dict:
+            if isinstance(val1, dict) and isinstance(val2, dict):
                 res.append(
                     {
                         "name": key,
@@ -27,10 +27,10 @@ def generate_diff_deep(data, data2):
             elif val1 == val2:
                 val = (
                     generate_diff_deep(val1, val1)
-                    if type(val1) == dict
+                    if isinstance(val1, dict)
                     else val1
                 )
-                children_ = True if type(val2) == dict else False
+                children_ = isinstance(val2, dict)
                 res.append(
                     {"name": key, "presence_status": "equal", "value": val, "children": children_}
                 )
