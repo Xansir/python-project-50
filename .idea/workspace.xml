@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15568f2e-65da-4f4c-8e01-a8372b903145" name="Changes" comment="Fix Makefile">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" />
+    <list default="true" id="15568f2e-65da-4f4c-8e01-a8372b903145" name="Changes" comment="Fix pyproject.toml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/hexlet-code-0.1.0.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hexlet-code-0.1.0.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/hexlet_code-0.1.0-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hexlet_code-0.1.0-py3-none-any.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +190,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704900515304</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fix Makefile">
+      <option name="closed" value="true" />
+      <created>1704901256147</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704901256147</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix Makefile">
+      <option name="closed" value="true" />
+      <created>1704901295750</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1704901295750</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fix pyproject.toml">
+      <option name="closed" value="true" />
+      <created>1704901617905</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704901617905</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +236,7 @@
     <MESSAGE value="Replace files" />
     <MESSAGE value="Linter fixes" />
     <MESSAGE value="Fix Makefile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Makefile" />
+    <MESSAGE value="Fix pyproject.toml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix pyproject.toml" />
   </component>
 </project>
