@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15568f2e-65da-4f4c-8e01-a8372b903145" name="Changes" comment="Linter fixes">
+    <list default="true" id="15568f2e-65da-4f4c-8e01-a8372b903145" name="Changes" comment="Fix Makefile">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-package.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/hexlet-code-0.1.0.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hexlet-code-0.1.0.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/hexlet_code-0.1.0-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hexlet_code-0.1.0-py3-none-any.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +45,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/rodion/python-project-50&quot;
   }
 }</component>
-  <component name="RunManager" selected="Makefile Target.package-install">
+  <component name="RunManager" selected="Makefile Target.selfcheck">
     <configuration name="build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="build" workingDirectory="" arguments="">
         <envs />
@@ -56,8 +58,15 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="selfcheck" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="selfcheck" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile Target.selfcheck" />
         <item itemvalue="Makefile Target.package-install" />
         <item itemvalue="Makefile Target.build" />
       </list>
@@ -160,7 +169,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704897772693</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Linter fixes">
+      <option name="closed" value="true" />
+      <created>1704899706624</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704899706624</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Linter fixes">
+      <option name="closed" value="true" />
+      <created>1704899926636</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704899926636</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix Makefile">
+      <option name="closed" value="true" />
+      <created>1704900515304</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704900515304</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +214,7 @@
     <MESSAGE value="Change init file" />
     <MESSAGE value="Replace files" />
     <MESSAGE value="Linter fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linter fixes" />
+    <MESSAGE value="Fix Makefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Makefile" />
   </component>
 </project>
