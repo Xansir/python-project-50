@@ -28,6 +28,9 @@ test-coverage:
 selfcheck:
 	poetry check
 
-check: selfcheck test lint
+check:
+	poetry check
+	poetry run pytest
+	poetry run flake8
 
 .PHONY: install test lint selfcheck check build
