@@ -1,7 +1,5 @@
 from .parser import parsing
-from .format.json_formater import format_json
-from .format.stylish_formatter import stylish
-from .format.plain_formater import formatter_plain
+from .format.choice_format import format_choice
 
 
 def files_to_dict(file1, file2):
@@ -20,8 +18,9 @@ def generate_diff_deep(data, data2):
                     {
                         "name": key,
                         "presence_status": "equal",
-                        "children": True,
+                        "node_type": "tree",
                         "value": generate_diff_deep(val1, val2),
+                        "children": isinstance(val1,dict)
                     }
                 )
             elif val1 == val2:
@@ -30,9 +29,9 @@ def generate_diff_deep(data, data2):
                     if isinstance(val1, dict)
                     else val1
                 )
-                children_ = isinstance(val2, dict)
+                node_type_ = "tree" if isinstance(val2, dict) else "flat"
                 res.append(
-                    {"name": key, "presence_status": "equal", "value": val, "children": children_}
+                    {"name": key, "presence_status": "equal", "value": val, "node_type": node_type_}
                 )
             elif val1 != val2:
                 curr_val = (
@@ -77,9 +76,5 @@ def generate_diff_deep(data, data2):
 def generate_diff(file1, file2, format_name='stylish'):
     data, data2 = files_to_dict(file1, file2)
     result = generate_diff_deep(data, data2)
-    if format_name == "json":
-        return format_json(result)
-    elif format_name == "stylish":
-        return stylish(result)
-    elif format_name == "plain":
-        return formatter_plain(result)
+    res = format_choice(result, format_name)
+    return res

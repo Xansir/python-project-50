@@ -29,8 +29,8 @@ selfcheck:
 	poetry check
 
 check:
-	poetry check
-	poetry run pytest
-	poetry run flake8
+	make selfcheck
+	make test
+	make lint
 
 .PHONY: install test lint selfcheck check build

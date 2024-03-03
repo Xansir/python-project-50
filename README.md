@@ -6,10 +6,13 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/eb044d7d27aab9fce340/maintainability)](https://codeclimate.com/github/Xansir/python-project-50/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/eb044d7d27aab9fce340/test_coverage)](https://codeclimate.com/github/Xansir/python-project-50/test_coverage)
 
+## Описание
+Небольшая CLI-утилита для вывода различий между двумя json/yaml файлами
+
 ## Установка
 _Требования для установки:_
 - _python = "^3.10"_
-- _pyyaml = "^6.0.1"_
+- _poetry = "^1.2.2"_
 - _Чтобы работать с проектом, вам необходимо клонировать репозиторий на свой компьютер.
 ```bash
 #HTTPS

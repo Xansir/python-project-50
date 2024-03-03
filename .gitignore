@@ -4,3 +4,4 @@
 /.venv/
 /coverage.xml
 /dist/
+/__pycache__/
