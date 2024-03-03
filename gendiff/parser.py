@@ -1,11 +1,22 @@
 import json
 import yaml
+from os.path import splitext
+
+EXTENSIONS = ('yaml', 'yml', 'json')
 
 
-def parsing(file_path):
-    if file_path.endswith('.json'):
-        return json.load(open(file_path))
-    elif file_path.endswith('.yaml') or file_path.endswith('.yml'):
-        return yaml.safe_load(open(file_path))
-    else:
-        return "Unsupported file type, or path Error"
+def prepare_data(path_file: str):
+    extension = splitext(path_file)[1][1:]
+    if extension in EXTENSIONS:
+        with open(path_file) as f:
+            data = f.read()
+            return data, extension
+    raise ValueError(f"Unrecognized extension: {extension}")
+
+
+def parsing(data: str, format: str) -> dict:
+    if format in ('yml', 'yaml'):
+        return yaml.safe_load(data)
+    if format == 'json':
+        return json.loads(data)
+    raise ValueError(f"Unrecognized extension: {format}")
