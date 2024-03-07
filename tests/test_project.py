@@ -40,7 +40,7 @@ from gendiff.gendiff import generate_diff
         'json'
     )
 ])
-def test_stylish(input1, input2, expected, format):
+def test_gendiff(input1, input2, expected, format):
     diff = generate_diff(input1, input2, format)
     with open(expected, 'r') as result:
         assert diff == result.read()

@@ -22,7 +22,7 @@ def build_plain(node, ancestry='') -> str:  # noqa: C901
         lines = map(lambda child: build_plain(child, f"{str_key}."), children)
         return sum(lines, [])
     else:
-        raise Exception(f"{node['type']} is a wrong type!")
+        raise ValueError
 
 
 def stringify_data(value):
@@ -34,7 +34,3 @@ def stringify_data(value):
         return '[complex value]'
     else:
         return f"'{str(value).lower()}'"
-
-
-def get_plain(tree):
-    return build_plain(tree)

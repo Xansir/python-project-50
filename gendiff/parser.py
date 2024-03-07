@@ -14,7 +14,7 @@ def prepare_data(path_file: str):
     raise ValueError(f"Unrecognized extension: {extension}")
 
 
-def parsing(data: str, format: str) -> dict:
+def parse_arguments(data: str, format: str) -> dict:
     if format in ('yml', 'yaml'):
         return yaml.safe_load(data)
     if format == 'json':

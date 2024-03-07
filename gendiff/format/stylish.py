@@ -50,4 +50,4 @@ def stylish(node, depth=0) -> str:  # noqa: C901
         result = '\n'.join(lines)
         return f"{indent}  {node['key']}: {{\n{result}\n{indent}  }}"
     else:
-        raise Exception(f"{node['type']} is a wrong type!")
+        raise ValueError
